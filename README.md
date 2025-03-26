@@ -1,51 +1,48 @@
 # 🏡 Loan Portfolio Management Dashboard
 
-A clean, responsive frontend dashboard built in React.js to manage loan data, upload loan documents, and filter/search records efficiently.
+A modern, mobile-friendly dashboard built in React + Vite to manage loan portfolios, upload supporting documents, and perform real-time filtering and searching.
 
 ---
 
 ## ✨ Features
 
 - Sidebar navigation
-- Portfolio listing with:
-  - Search bar (with clear button)
-  - Filter buttons (More Filters opens modal)
-  - Row highlight on new entries
-- Data Upload section to add new loan data
-- Upload modal form (document name/type + file)
-- Toast notification on successful upload
-- Highlight animation for new row
-- Active filter styling
+- Portfolio table with filter buttons and search bar
+- Upload modal (triggered by 'More Filters')
+- Add entries via Data Upload form
+- Row highlight on new entry
+- Success toast notification
+- Clear search input button
+- Responsive and styled UI
 
 ---
 
 ## 🧰 Tech Stack
 
-- Frontend: React.js (Vite)
-- CSS: Vanilla CSS
-- State Management: React useState, useEffect
-- Deployment: Render
+- React.js + Vite
+- Vanilla CSS (flexbox layout)
+- State: useState, useEffect
+- Deployment: Vercel
 
 ---
 
 ## 🗂 Folder Structure
 
 ```
-📁 src
- ┣ 📂 components
- ┃ ┣ 📄 Sidebar.jsx
- ┃ ┣ 📄 Filters.jsx
- ┃ ┣ 📄 PortfolioTable.jsx
- ┃ ┣ 📄 UploadForm.jsx
- ┃ ┗ 📄 UploadModal.jsx
- ┣ 📄 main.jsx
- ┣ 📄 index.css
- ┗ 📄 index.html
+src/
+├── components/
+│   ├── Sidebar.jsx
+│   ├── Filters.jsx
+│   ├── PortfolioTable.jsx
+│   ├── UploadForm.jsx
+│   └── UploadModal.jsx
+├── main.jsx
+└── index.css
 ```
 
 ---
 
-## 🚀 How to Run Locally
+## 🚀 Running Locally
 
 ```bash
 git clone https://github.com/yourusername/loan-portfolio-ui.git
@@ -56,32 +53,27 @@ npm run dev
 
 ---
 
-## 🌐 How to Deploy to Render
+## 🌐 Deploy on Vercel
 
-1. Push your code to a GitHub repo
-2. Go to [https://render.com](https://render.com) and sign in
-3. Click **New Web Service** > **Connect to GitHub**
-4. Select your repo
-5. Set:
-   - **Build Command:** `npm run build`
-   - **Start Command:** `serve -s dist`
-6. Render will auto-build and give you a live URL!
-
-> 💡 Need to install `serve`? Run `npm install -g serve`
+- Visit https://vercel.com
+- Import your GitHub repo
+- Vercel auto-detects Vite config
+- Deploy instantly with live URL
 
 ---
 
-## 🛠 Future Enhancements
+## 🛠 Future Ideas
 
-- Column sorting
-- Pagination
-- User login/auth
-- Backend integration (Firebase / Express.js)
+- Sortable and paginated table
+- Region and loan type filters
+- Data export to CSV
+- Backend API integration (e.g. Firebase)
+- Auth and permission management
 
 ---
 
 ## 👤 Author
 
-**Name:** Your Name  
-**ID:** Your College ID  
-**Submission:** [Date]
+**Name:** Alex 
+**ID:** INDIAN INSTITUTE OF TECHNOLOGY, MANDI
+**Hosted On:** [https://loan-portfolio-ui.vercel.app](https://loan-portfolio-ui.vercel.app)
